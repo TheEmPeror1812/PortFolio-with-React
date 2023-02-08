@@ -1,0 +1,92 @@
+@import "./color.scss";
+
+.profile-img-2 img {
+    height: 406px;
+    width: 156px;
+    transition: 0.5s;
+
+    &:hover {
+        height: 450px;
+        width: 166px;
+    }
+}
+
+.About-Me {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.profile-img-2 {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    border: 5px solid grey;
+    padding: 32px 40px;
+    border-radius: 65px;
+    background-image: linear-gradient(#48354d, #000000);
+}
+
+.About_me_text {
+    color: $c_2;
+    margin: 10px 65px;
+
+    >h2 {
+        color: $c_3;
+        font-size: 38px;
+    }
+
+    >p {
+        font-size: 17px;
+        text-align: justify;
+    }
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+    position: relative;
+
+    &::after {
+        content: "";
+        width: 0px;
+        height: 3px;
+        background: $c_3;
+        position: absolute;
+        left: 0px;
+        bottom: -8px;
+        transition: 0.5s;
+    }
+}
+
+.active-link::after {
+    width: 50%;
+}
+
+.tab-contents {
+    list-style: none;
+    margin: 10px 0px;
+    display: none;
+
+    >ul>li>span {
+        color: $c_3;
+        font-size: 14px;
+    }
+
+    >ul>li>a {
+        color: $c_2;
+        text-decoration: none;
+        cursor: pointer;
+    }
+}
+
+.active-tab {
+    display: block;
+}

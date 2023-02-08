@@ -1,0 +1,114 @@
+@import "./color.scss";
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $c_1;
+    height: 90px;
+
+    >.navigation {
+        >i {
+            left: 156px;
+            position: absolute;
+            color: white;
+            top: 1px;
+            font-size: 50px;
+            transition: 0.7s;
+
+            &:hover {
+                font-size: 70px;
+            }
+        }
+    }
+
+    >div {
+        position: relative;
+        width: 450px;
+        height: 68px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+
+        >ul {
+            display: flex;
+            width: 350px;
+
+            >li {
+                position: relative;
+                list-style: none;
+                width: 70px;
+                height: 70px;
+                z-index: 1;
+
+                &:hover a .icon {
+                    transform: translateY(-15px);
+                }
+
+                &:hover a .text {
+                    opacity: 1;
+                    transform: translateY(10px);
+                }
+
+                >a {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    width: 100%;
+                    text-align: center;
+                    font-weight: 500;
+
+                    >.icon {
+                        position: relative;
+                        display: block;
+                        line-height: 75px;
+                        font-size: 1.5em;
+                        text-align: center;
+                        transition: 0.5s;
+                        color: $c_1;
+                    }
+
+                    >.text {
+                        position: absolute;
+                        color: $c_1;
+                        font-weight: 400;
+                        font-size: 0.75em;
+                        letter-spacing: 0.05em;
+                        transition: 0.5s;
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                }
+            }
+        }
+    }
+
+    >.logo-right {
+        >img {
+            right: 160px;
+            position: absolute;
+            top: 4px;
+            height: 60px;
+            width: 60px;
+            transition: 0.5s;
+
+            &:hover {
+                height: 130px;
+                width: 130px;
+            }
+        }
+    }
+}
+
+#co {
+    background: linear-gradient(to right, white, #098bff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#nav-special {
+    background-color: $c_2;
+}

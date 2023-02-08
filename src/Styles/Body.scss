@@ -1,0 +1,78 @@
+@import "./color.scss";
+
+#home {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 700px;
+}
+
+#hi {
+    font-size: 50px;
+    color: $c_2;
+
+    >a {
+        text-decoration: none;
+        color: $c_3;
+        transition: 0.5s;
+
+        &:hover {
+            font-size: 70px;
+        }
+    }
+}
+
+#full {
+    font-size: 30px;
+    color: aqua;
+    transition: 0.5s;
+
+    &:hover {
+        font-size: 40px;
+    }
+}
+
+.profile-img {
+    border: 10px solid #0d0a0e;
+    padding: 26px 37px;
+    border-radius: 104px;
+    background-image: linear-gradient(#48354d, #000000);
+    right: 90px;
+    position: relative;
+
+    >img {
+        height: 519px;
+        width: 237px;
+        transition: 0.5s;
+
+        &:hover {
+            height: 550px;
+            width: 260px;
+        }
+    }
+}
+
+.intro-text {
+    color: $c_2;
+    position: relative;
+    left: 67px;
+}
+
+.coding_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 108%;
+    margin: 11px 0px;
+
+    >img {
+        height: 359px;
+        width: 369px;
+        transition: 0.5s;
+
+        &:hover {
+            height: 390px;
+            width: 400px;
+        }
+    }
+}
