@@ -37,7 +37,7 @@ const data3 = [{
 },
 {
     inspan: "Certified By Meta",
-    link:"https://www.coursera.org/account/accomplishments/verify/ST6X7F4PNPKN",
+    link: "https://www.coursera.org/account/accomplishments/verify/ST6X7F4PNPKN",
     inanchor: "React Basics By Meta"
 },
 {
@@ -57,7 +57,7 @@ function List1({ inspan, inanchor }) {
     return (<li><span>{inspan}</span><br></br>{inanchor}</li>)
 }
 
-function List2({ inspan,link,inanchor }) {
+function List2({ inspan, link, inanchor }) {
     return (<li><span>{inspan}</span><br></br><a href={link}>{inanchor}</a></li>)
 }
 
@@ -68,21 +68,21 @@ function AboutMe() {
     const [Skill_class, setSkill_class] = useState("tab-links active-link");
     const [certi_class, setcerti_class] = useState("tab-links");
 
-    function edu_clickHandler(){
+    function edu_clickHandler() {
         setCount(1)
         setedu_class("tab-links active-link")
         setSkill_class("tab-links")
         setcerti_class("tab-links")
     }
 
-    function skill_clickHandler(){
+    function skill_clickHandler() {
         setCount(0)
         setedu_class("tab-links")
         setSkill_class("tab-links active-link")
         setcerti_class("tab-links")
     }
 
-    function certi_clickHandler(){
+    function certi_clickHandler() {
         setCount(2)
         setedu_class("tab-links")
         setSkill_class("tab-links")
@@ -97,8 +97,8 @@ function AboutMe() {
 
             <div className="About_me_text">
                 <h2>About Me</h2>
-                <p>Graduate from Delhi Technological University formerly (DCE). I am a passionate Full Stack Developer with
-                    skills like HTML, CSS, JavaScript,Bootstrap. I also possess skills like Node.js, Express.js among other
+                <p>Graduate from Delhi Technological University formerly (DCE). I am a passionate Full Stack Developer and UX UI Designer with
+                    skills like HTML, CSS, JavaScript, Bootstrap, Figma, React.js. I also possess skills like Node.js, Express.js among other
                     skills in backend development. I also have knowledge of different databases like MongoDB and MySQL and I
                     have worked on several projects related to Frontend and Backend Development. I have knowledge of Data
                     Structures and Algorithms, C++ and Object Oriented Programming. Excellent Client relationship building
@@ -116,17 +116,17 @@ function AboutMe() {
                 <div className="tab-contents active-tab" id="skills">
                     <ul>
                         {
-                            count === 0?
-                            data1.map((i, index) => (
-                                <List1 inspan={i.inspan} inanchor={i.inanchor} key={index}/>
-                            )) :
-                            count === 1 ?
-                            data2.map((i, index) => (
-                                <List1 inspan={i.inspan} inanchor={i.inanchor} key={index}/>
-                            )) : 
-                            data3.map((i, index) => (
-                                <List2 inspan={i.inspan} link={i.link} inanchor={i.inanchor} key={index}/>
-                            ))
+                            count === 0 ?
+                                data1.map((i, index) => (
+                                    <List1 inspan={i.inspan} inanchor={i.inanchor} key={index} />
+                                )) :
+                                count === 1 ?
+                                    data2.map((i, index) => (
+                                        <List1 inspan={i.inspan} inanchor={i.inanchor} key={index} />
+                                    )) :
+                                    data3.map((i, index) => (
+                                        <List2 inspan={i.inspan} link={i.link} inanchor={i.inanchor} key={index} />
+                                    ))
                         }
                     </ul>
                 </div>
