@@ -49,6 +49,11 @@ const data3 = [{
     inspan: "Certified By The Hong Kong University of Science and Technology",
     link: "https://www.coursera.org/account/accomplishments/verify/3CGCFTBX5V5D",
     inanchor: "Server-side Development with Node.js, Express.js and MongoDB"
+},
+{
+    inspan: "Certified By Meta",
+    link: "https://www.coursera.org/account/accomplishments/verify/D2J2Q4PBFLXN",
+    inanchor: "Principles of UX/UI Design"
 }
 ]
 
