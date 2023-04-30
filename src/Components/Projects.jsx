@@ -20,16 +20,15 @@ function Projects() {
           </a>
         </div>
         <div className="box pr-2">
-          <h1>Todo List App</h1>
+          <h1>Social Media App</h1>
           <p>
-            This website offers users a very good user experience with creating
-            their own ToDo - Lists. It also offers users with various other
-            options like deleting and updating the list created by them. It uses
-            the concept of local storage for saving the ToDo- list. This helps
-            the user to revive his/her data in case the system shuts down or the
-            user mistakenly closes the website.
+            This is a single page social media application made with the help of
+            MongoDB, Express, React.Js, Node.Js (MERN Stack) project. You can
+            signup here, post your photographs, follow other users, edit your
+            profile and also upload your own avatar like all other social media
+            applications available in the market.
           </p>
-          <a href="https://todo-list-sooty-chi-75.vercel.app/">
+          <a href="https://social-media-community-40th.onrender.com/">
             Click Here To Visit App !!
           </a>
         </div>
